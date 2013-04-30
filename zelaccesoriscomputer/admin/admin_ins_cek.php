@@ -3,7 +3,7 @@ include "../connect.php";
 $user = $_POST['username'];
 $pass = md5($_POST['password']);
 if (empty($user)) {
-              echo"<script>alert('Username Harus Di isi !!!')</script>";			 
+              echo("<p align=center> <strong>Username dan Password </strong> Harus Diisi !!! </font><p>");
 			  echo "<meta http-equiv='refresh' content='0; URL=?menu=admin_ins'>";
               }
 			  else {
@@ -11,7 +11,7 @@ if (empty($user)) {
 			   $query= mysql_query($sql);
 
 			   if ($query);{
-				echo"<script>alert('Admin Berhasil Di Tambah'); </script>";
+				echo"<script>alert('admin add succesful'); </script>";
 				echo "<meta http-equiv='refresh' content='0; URL=?menu=admin'>";
 					}
 					}

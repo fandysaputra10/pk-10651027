@@ -56,7 +56,7 @@
 				while($data = mysql_fetch_array($query)){
 				
 				echo '<tr align=\"center\">';
-				echo '<td width=97 bgcolor=#CACACA>'.$data['username'].'</td>';
+				echo '<td width=97 bgcolor=#CACACA><div align=center>'.$data['username'].'</div></td>';
 				echo '<td width=97 bgcolor=#CACACA><div align=center>'.$data['password'].'</div></td>';
 				echo "<td width=97 bgcolor=#CACACA><center><a href='?menu=admin_del&remove=hapus&id=$data[id]'><img src=\"images/delete.png\" ></a></center></div></td>";
 				echo '</tr>';

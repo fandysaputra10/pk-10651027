@@ -5,6 +5,7 @@ switch($_GET['menu']){
 	case admin_ins : include "admin_ins.php";break;
 	case admin_ins_cek : include "admin_ins_cek.php";break;
 	case admin_upd: include "admin_upd.php";break;
+	case admin_upd_cek:include "admin_upd_cek.php";break;
 	case admin_del : include "admin_del.php";break;
 	case siswa :include "siswa.php";break;
     case lihat_siswa : include "lihat_siswa.php";break;

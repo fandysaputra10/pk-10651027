@@ -36,29 +36,12 @@
 			</div>
 	</div>
 	<div class="box-content">
-		<?php 
-		$id=$_GET['id'];
-
-		if($_POST['update'])
-		{
-			$id=$_POST['id'];
-			$user=$_POST['username'];
-			$pass=$_POST['password'];
-			
-			mysql_query("UPDATE admin SET username='$user', password='$pass' where id='$id'");
-			echo "<script>alert('Admin Berhasil Disimpan');</script>";
-			echo "<meta http-equiv='refresh' content='0 URL=?menu=admin'>";
-		}
-		?>
-
-		<?php
-		
+		<?php		
 		$id=$_GET['id'];
 		$sql=mysql_query("SELECT * FROM admin WHERE id='$id' ");
 		$rowsql=mysql_fetch_array($sql);
 		?>
-		<form method="post" action="#" enctype="multipart/form-data">
-		<input type="hidden" name="id" value="<?php echo "$rowsql[id]";?>"/>
+		<form method="post" action="?menu=admin_upd_cek" enctype="multipart/form-data">
 		<table width="100%" border="1" align="center" cellpadding="4" cellspacing="2">
 			<tbody>
 				<tr>
@@ -73,7 +56,7 @@
 				echo"<tr align=\"center\">
 				  <td width=97 bgcolor=#CACACA>$data[username]</td>
 				  <td width=97 bgcolor=#CACACA>$data[password]</td>
-				  <td width=97 bgcolor=#CACACA><center><a href='?menu=admin_upd&update=update&id=$data[id]'><img src=\"images/update.png\" ></a></center>
+				  <td width=97 bgcolor=#CACACA><center><a href='?menu=admin_upd_cek&id=$data[id]''><img src=\"images/update.png\" ></a></center>
 				</tr>";
 				}
 			?>

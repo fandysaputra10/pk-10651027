@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
-	<title>Zelaccom</title>
+	<title>Zelaccom | Accesoris Computer</title>
 	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css' />
@@ -24,17 +24,12 @@
 		<header class="header">
 			<div class="shell">
 				<div class="header-top">
-					<h1 id="logo"><a href="#">Digy</a></h1>
+					<h1 id="logo"><a href="#">Zelaccom</a></h1>
 					<nav id="navigation">
-						<a href="#" class="nav-btn">Home<span></span></a>
 						<ul>
-							<li class="active home"><a href="#">Home</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Projects</a></li>
-							<li><a href="#">Solutions</a></li>
-							<li><a href="#">Jobs</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contacts</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Map</a></li>
+							<div class="cl">&nbsp;</div>
 						</ul>
 					</nav>
 					<div class="cl">&nbsp;</div>
@@ -43,13 +38,13 @@
 					<div id="bg"></div>
 					<div id="carousel">
 						<div>
-							<h5>It all starts with a</h5>
-							<h3>Great Vision</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget augue quis quam dignissim consectetur ac sit amet nisl. In hac habitasse platea. Eget augue quis quam dignissi lorem lipsum adispicing dolor sit amet.</p>
-							<a href="#" class="green-btn">FREE Quote</a>
-							<img class="img-front" src="css/images/front-img.png" alt="dot1" width="263" height="436" />
-							<img class="img-mid" src="css/images/img-mid.png" alt="dot2" width="230" height="363" />
-							<img class="img-back" src="css/images/img-back.png" alt="dot3" width="195" height="304" />
+							<h5>ini adalah kategori</h5>
+							<h3>Mouse </h3>
+							<p>Jenis-jenis dan fungsi mouse.</p>
+							<a href="#" class="green-btn">Learn more</a>
+							<img class="img-front" src="css/images/mouse.png" alt="dot1"/>
+							<img class="img-mid" src="css/images/mouse2.png" alt="dot2"/>
+							<img class="img-back" src="css/images/mouse3.png" alt="dot3" />
 						</div>
 
 						<div>
@@ -61,27 +56,6 @@
 							<img class="img-mid" src="css/images/img-mid.png" alt="dot2" width="230" height="363" />
 							<img class="img-back" src="css/images/img-back.png" alt="dot3" width="195" height="304" />
 						</div>
-
-						<div>
-							<h5>It all starts with a</h5>
-							<h3>Great Vision</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget augue quis quam dignissim consectetur ac sit amet nisl. In hac habitasse platea. Eget augue quis quam dignissi lorem lipsum adispicing dolor sit amet.</p>
-							<a href="#" class="green-btn">FREE Quote</a>
-							<img class="img-front" src="css/images/front-img.png" alt="dot1" width="263" height="436" />
-							<img class="img-mid" src="css/images/img-mid.png" alt="dot2" width="230" height="363" />
-							<img class="img-back" src="css/images/img-back.png" alt="dot3" width="195" height="304" />
-						</div>
-
-						<div>
-							<h5>It all starts with a</h5>
-							<h3>Great Vision</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget augue quis quam dignissim consectetur ac sit amet nisl. In hac habitasse platea. Eget augue quis quam dignissi lorem lipsum adispicing dolor sit amet.</p>
-							<a href="#" class="green-btn">FREE Quote</a>
-							<img class="img-front" src="css/images/front-img.png" alt="dot1" width="263" height="436" />
-							<img class="img-mid" src="css/images/img-mid.png" alt="dot2" width="230" height="363" />
-							<img class="img-back" src="css/images/img-back.png" alt="dot3" width="195" height="304" />
-						</div>
-
 					</div>
 					<div class="pagination"></div>
 					<a id="prev" href="#"></a>
@@ -100,25 +74,22 @@
 					<div class="col">
 						<img src="css/images/col-img1.png" alt="" />
 						<div class="col-cnt">
-							<h2>BRAINSTORM</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing dolor emor</p>
-							<a href="#" class="more">view more</a>
+							<h2>CATEGORY DEVICE</h2>
+							<a href="#" class="more"></a>
 						</div>
 					</div>
 					<div class="col">
 						<img src="css/images/col-img2.png" alt="" />
 						<div class="col-cnt">
-							<h2>DESIGN</h2>
-							<p>Duis risus elit, imperdiet eget sollicitudin quis, gravida sed mi. </p>
-							<a href="#" class="more">view more</a>
+							<h2>POPULAR DEVICE</h2>
+							<a href="#" class="more"></a>
 						</div>
 					</div>
 					<div class="col">
 						<img src="css/images/col-img3.png" alt="" />
 						<div class="col-cnt">
-							<h2>CODE</h2>
-							<p>Proin quis sem in mauris fringilla commodo ac a felis.</p>
-							<a href="#" class="more">view more</a>
+							<h2>TESTIMONIALS</h2>
+							<a href="#" class="more"></a>
 						</div>
 					</div>
 					<div class="cl">&nbsp;</div>
@@ -128,39 +99,33 @@
 				<section class="post">
 					<img src="css/images/post-img.png" alt="" />
 					<div class="post-cnt">
-						<h2>Yes, that would be the logical choice</h2>
-						<p>
-							<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit adispicing amet </strong><br />
-							Cras molestie condimentum consequat. Nam leo libero, scelerisque tincidunt amet nsectetur adipiscing elit. Cras molestie condimentum nsectetur adipiscing elit. Cras molestie condimentum consequat pretium donec Duis risus elit, imperdiet eget sollicitudin quis, <strong>some of the features:</strong>
-						</p>
-
-						<ul>
-							<li><a href="#">jQuery Carousel Slideshow</a></li>
-							<li><a href="#">Various Column Options</a></li>
-							<li><a href="#">Valid XHTML and CSS Tableless Design</a></li>
-							<li><a href="#">Tested on Mac &amp; PC</a></li>
-						</ul>
+						<h2>DISINI TAMPILAN BERITA PRODUK TERBARU</h2>
 					</div>
 					<div class="cl">&nbsp;</div>
 				</section>
 
 				<section class="content">
-					<h2>WHO WE ARE</h2>
-					<p>Maecenas vel est sit amet massa dignissim <span>hendrerit</span> sit amet ac ante. Praesent dapibus neque vel enim adipiscing vel feugiat leo luctus. Nulla semper varius nulla, eu euismod turpis volutpat in. Nullam neque diam, facilisis vitae suscipit eu, gravida ut tortor. Duis faucibus lectus nec metus elementum ac <a href="#">adipiscing</a> lorem consectetur. Nulla dui ipsum, <em>iaculis a mollis vel</em>, sodales a ipsum. Nam tincidunt consequat lacus eget imperdiet. Nullam posuere convallis libero, vitae lobortis libero fermentum eu. Ut id venenatis lectus. <strong>Donec eget</strong> quam et dolor facilisis commodo nullam tempor aliquet vulputate phasellus ac libero sed justo luctus vehicula.<br /> <a href="#" class="more">meet the team</a></p>
+					<h2>PARTNERS KAMI</h2>
 				</section>
-
+				
 				<section class="partners">
-					
 					<div id="partners-slider">
 						<div class="slider-holder2">
-						    <img src="css/images/partners1.png" width="92" height="52" />
-						    <img src="css/images/partners2.png" width="172" height="52" />
-						    <img src="css/images/partners3.png" width="236" height="52" />
-						    <img src="css/images/partners4.png" width="121" height="52" />
-						    <img src="css/images/partners1.png" width="92" height="52" />
-						    <img src="css/images/partners2.png" width="172" height="52" />
-						    <img src="css/images/partners3.png" width="236" height="52" />
-						    <img src="css/images/partners4.png" width="121" height="52" />
+						    <img src="css/images/partnerscanon.png" width="250" height="52" />
+							<img src="css/images/partnerskingston.png" width="388" height="52" />
+						    <img src="css/images/partnerstoshiba.png" width="216" height="66" />
+							<img src="css/images/partnersacer.png" width="200" height="52" />
+						    <img src="css/images/partnerssimbadda.png" width="361" height="52" />
+							<img src="css/images/partnerslogitech.png" width="300" height="99" />
+							<img src="css/images/partnersgenius.png" width="175" height="52" />
+							
+						    <img src="css/images/partnerscanon.png" width="250" height="52" />
+							<img src="css/images/partnerskingston.png" width="388" height="52" />
+							<img src="css/images/partnerstoshiba.png" width="215" height="66" />
+						    <img src="css/images/partnersacer.png" width="200" height="52" />
+						    <img src="css/images/partnerssimbadda.png" width="361" height="52" />
+							<img src="css/images/partnerslogitech.png" width="300" height="99" />
+							<img src="css/images/partnersgenius.png" width="175" height="52" />							
 						</div>
 					</div>
 					<div class="slider-arr">
@@ -170,13 +135,10 @@
 				</section>
 
 				<div class="socials">
-					<p>We are currently <strong>available</strong> for work. Please, contact us for a quote at <span><a href="#">contact [at] websitename [dot] com</a></span></p>
-
+					<p>Apabila ada<strong> komplain </strong>mengenai produk kami, Silahkan hubungi kami</p>
 					<ul>
 						<li><a href="#" class="facebook-ico">facebook-ico</a></li>
 						<li><a href="#" class="twitter-ico">twitter-ico</a></li>
-						<li><a href="#" class="skype-ico">skype-ico</a></li>
-						<li><a href="#" class="rss-ico">rss-ico</a></li>
 					</ul>
 				</div>
 			</div>
@@ -237,15 +199,13 @@
 					<div class="footer-nav">
 						<ul>
 							<li><a hrerf="#">Home</a></li>
-							<li><a hrerf="#">Services</a></li>
-							<li><a hrerf="#">Projects</a></li>
-							<li><a hrerf="#">Solutions</a></li>
-							<li><a hrerf="#">Jobs</a></li>
-							<li><a hrerf="#">Blog</a></li>
+							<li><a hrerf="#">News</a></li>
+							<li><a hrerf="#">Products</a></li>
+							<li><a hrerf="#">Join Us</a></li>
 							<li><a hrerf="#">Contacts</a></li>
 						</ul>
 					</div>
-					<p class="copy">Copyright &copy; 2012<span>|</span>Design by: <a href="http://chocotemplates.com" target="_blank">www.ChocoTemplates.com</a></p>
+					<p class="copy">Copyright &copy; 2013<span>|</span>Design by: <a href="#" target="_blank">Prokhus-10651027-Fandy Saputra</a></p>
 					<div class="cl">&nbsp;</div>
 				</div>
 			</div>
