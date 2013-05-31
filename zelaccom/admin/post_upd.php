@@ -23,6 +23,7 @@
 					$nama=$_POST['nama_page'];
 					$detail=$_POST['isi'];
 					$harga=$_POST['price'];
+					$stok = $_POST['stok'];
 					$gambar=$_POST['gambar'];
 					
 					$lokasi_file=$_FILES['gambar']['tmp_name'];
@@ -32,7 +33,7 @@
 					
 					$alert="Post Update Successful <img src=images/loader2.gif>";
 					
-					mysql_query("UPDATE new_product SET nama_page='$nama', isi='$detail', price='$harga', gambar='$nama_file' where id='$id' ");
+					mysql_query("UPDATE new_product SET nama_page='$nama', isi='$detail', price='$harga', stok='$stok' , gambar='$nama_file' where id='$id' ");
 					echo "$alert";
 					echo "<meta http-equiv='refresh' content='2 URL=?menu=post'>";
 				}
@@ -65,6 +66,11 @@
 							<td height="47" align="center" valign="top"><b>Harga</b></td>
 							<td align="center" valign="top">:</td>
 							<td valign="top"><input type="text" name="price" size="25" value="<?php echo "$rowsql[price]";?>" /></td>
+						</tr>
+						<tr>
+							<td height="47" align="center" valign="top"><b>Stok</b></td>
+							<td align="center" valign="top">:</td>
+							<td valign="top"><input type="text" name="stok" size="25" value="<?php echo "$rowsql[stok]";?>" /></td>
 						</tr>
 						<tr>
 							<td height="47" align="center" valign="top"><b>Gambar</b></td>

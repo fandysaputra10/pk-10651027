@@ -21,7 +21,16 @@
 								$p      = new Paging6;
 								$batas  = 10;
 								$posisi = $p->cariPosisi($batas);
-								
+								if ($_GET['id_category']){
+								$query=mysql_query("SELECT * FROM category WHERE id_category='$_GET[id_category]' ORDER BY nama_category ASC LIMIT $posisi, $batas");
+								while($data=mysql_fetch_array($query)){
+									
+									echo"<tr align=\"center\">
+									  <td>$data[nama_category]</td>
+									  <td><a href='?menu=category&delete=$data[id_category]'><img src=\"images/delete.png\" ></a></td>
+									</tr>";
+								}
+								}else {
 								$query=mysql_query("SELECT * FROM category ORDER BY nama_category ASC LIMIT $posisi, $batas");
 								while($data=mysql_fetch_array($query)){
 									
@@ -30,7 +39,7 @@
 									  <td><a href='?menu=category&delete=$data[id_category]'><img src=\"images/delete.png\" ></a></td>
 									</tr>";
 								}
-
+								}
 								if($_GET['delete']){
 									$id=$_GET['delete'];
 									$data = mysql_query("SELECT * FROM category WHERE id_category '$id' ");

@@ -1,4 +1,4 @@
-	<div id="content" class="float_r">
+<div id="content" class="float_r">
         	<h1>Product Kami</h1>
 			<?php
 			include "class.php";
@@ -6,7 +6,7 @@
 			$p      = new Paging6;
 			$batas  = 9;
 			$posisi = $p->cariPosisi($batas);
-			$sql=mysql_query("SELECT * FROM product WHERE  id_category='$_GET[category]' ORDER BY id_product DESC LIMIT $posisi, $batas");
+			$sql=mysql_query("SELECT * FROM product ORDER BY id_product DESC LIMIT $posisi, $batas");
 			while ($row=mysql_fetch_array($sql)){
 			?>
 			<div id="product_fandy">
@@ -15,7 +15,8 @@
                 <h3><?php echo $row['nama_product']; ?></h3>
                 <p class="product_price">Rp.<?php echo $row['price'];?></p>
 				<p>Stok yang ada<strong> <?php echo $row['stok'];?></strong></p>
-				<a href="?menu=detail_prod&id_category=<?php echo $row['id_category'];?>" class="detail"><img src="images/detail.png" title="Detail Product"></a>
+				<a href="?menu=shoppingcart" class="add_to_card"><img src="images/cart.png"></a>
+                <a href="?menu=productdetail" class="detail">Detail</a>
 			</div>
 			</div>
 			<?php } ?>  

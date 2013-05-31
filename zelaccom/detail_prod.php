@@ -1,12 +1,13 @@
 <div id="content" class="float_r"> 
 
 <?php
-$sql = mysql_query("SELECT * FROM new_product  WHERE id='$_GET[id]'");
-$data = mysql_fetch_array($sql);
+	include "connect.php";
+	$sql = mysql_query("SELECT * FROM product ORDER BY id_product DESC");
+	$data = mysql_fetch_array($sql);
 ?>  	
-            <h1><?php echo $data['nama_page'];?></h1>
+            <h1><?php echo $data['nama_product'];?></h1>
             <div class="content_half float_l">
-        	<a  rel="lightbox[portfolio]"><img src="images/new_product/<?php echo $data['gambar'];?>" alt="Image 01" /></a>
+        	<a  rel="lightbox[portfolio]"><img src="images/product/<?php echo $data['gambar']; ?>" alt="Image 01" /></a>
             </div>
             <div class="content_half float_r">
 				<table>
@@ -26,22 +27,23 @@ $data = mysql_fetch_array($sql);
             <div class="cleaner h30"></div>
             
             <h5>Product Description</h5>
-            <p><?php echo $data['isi'];?></p>	
+            <p><?php echo $data['detail'];?></p>	
 			
             <div class="cleaner h50"></div>
 			
 			
 			<h4>Coba produk lainnya</h4>
 			<?php
-			$sql = mysql_query("SELECT * FROM new_product ORDER BY RAND() DESC LIMIT 3 ");
+			$sql = mysql_query("SELECT * FROM product ORDER BY RAND() DESC LIMIT 3 ");
 			while ($data=mysql_fetch_array($sql)){
 			?>
         	<div class="product_box">
-            	<a href="?menu=productdetail&id=<?php echo $data['id'];?>"><img src="images/new_product/<?php echo $data['gambar'];?>" alt="Image 01" /></a>
-                <h3><?php echo $data['nama_page'];?></h3>
+            	<a href="#"><img src="images/product/<?php echo $data['gambar'];?>" alt="Image 01" /></a>
+                <h3><?php echo $data['nama_product'];?></h3>
                 <p class="product_price">Rp.<?php echo $data['price'];?></p>
-				<a href="?menu=productdetail&id=<?php echo $data['id'];?>" class="detail"><img src="images/detail.png" title="Detail Product"></a>
-            </div>
+                <a href="?menu=detail_prod&id_product&id_category=<?php echo $data['id_category'];?>" class="detail"><img src="images/detail.png" title="Detail Product" /></a>
+            </div>     
+			
 			<?php } ?>
 </div> 
 

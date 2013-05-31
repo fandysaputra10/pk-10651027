@@ -92,7 +92,7 @@ ddsmoothmenu.init({
     <div id="templatemo_menu">
     	<div id="top_nav" class="ddsmoothmenu">
 		<?php
-		if($_GET['menu']=='etransaksi'){
+		if($_GET['menu']=='contact'){
 		echo "<ul>
 						<li><a href=?menu=home><span></span>Home</a></li>
 							<li><a href=#>Products</a>
@@ -166,90 +166,9 @@ ddsmoothmenu.init({
 									<li><a href=?menu=product&category=39>Webcam</a></li>
 								</ul>
 							</li>
-							<li><a href=?menu=etransaksi class=selected><span></span>Shopping Cart</a></li>
-							<li><a href=?menu=checkout><span></span>Checkout</a></li>
+							<li><a href=?menu=contact class=selected><span></span>Contact</a></li>
 							<li><a href=?menu=about><span></span>About Us</a></li>
-							<li><a href=?menu=guestbook><span></span>Guest Book</a></li>
-							<li><a href=?menu=registrasi><span></span>Login</a></li>
-					</ul>";
-		}else if ($_GET['menu']=='checkout'){
-		echo "<ul>
-						<li><a href=?menu=home><span></span>Home</a></li>
-							<li><a href=#>Products</a>
-								<ul>
-									<li><a href=#/page/1>Peripheral</a>
-										<ul>
-											<li><a href=?menu=product&category=1>Mouse</a></li>
-											<li><a href=?menu=product&category=2>Keyboard</a></li>
-											<li><a href=?menu=product&category=3>Hard Disk</a></li>
-											<li><a href=?menu=product&category=4>Printer</a></li>
-											<li><a href=?menu=product&category=6>Scanner</a></li>
-											<li><a href=?menu=product&category=7>Power Bank</a></li>
-											<li><a href=?menu=product&category=8>Charger</a></li>
-											<li><a href=?menu=product&category=9>Adaptor</a></li>
-											<li><a href=?menu=product&category=10>Converter</a></li>
-											<li><a href=?menu=product&category=11>Stabilizer</a></li>
-										</ul>
-									</li>
-									<li><a href=#/page/2>Networking</a>
-										<ul>
-											<li><a href=?menu=product&category=12>Modem</a></li>
-											<li><a href=?menu=product&category=13>Router</a></li>
-											<li><a href=?menu=product&category=14>Switch Hub</a></li>
-											<li><a href=?menu=product&category=15>Access Point</a></li>
-											<li><a href=?menu=product&category=17>Connector</a></li>
-											<li><a href=?menu=product&category=19>Mikrotik</a></li>
-										</ul>
-									</li>
-									<li><a href=#/page/3>Multimedia</a>
-										<ul>
-											<li><a href=?menu=product&category=20>Speaker</a></li>
-											<li><a href=?menu=product&category=21>Earphone</a></li>
-											<li><a href=?menu=product&category=22>Headphone</a></li>
-											<li><a href=?menu=product&category=23>Microphone</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href=#>Accesoris Lainnya</a>
-								<ul>
-									<li><a href=#/page/1>Flashdisk</a>
-										<ul>
-											<li><a href=?menu=product&category=30>Kingston</a></li>
-											<li><a href=?menu=product&category=31>Trancend</a></li>
-											<li><a href=?menu=product&category=32>Hewlett Packard</a></li>
-											<li><a href=?menu=product&category=40>Sandisk</a></li>
-											<li><a href=?menu=product&category=41>Advan</a></li>
-											<li><a href=?menu=product&category=42>Toshiba</a></li>
-										</ul>
-									</li>
-									<li><a href=#/page/2>Memory Cards</a>
-										<ul>
-											<li><a href=?menu=product&category=33>Sandisk</a></li>
-											<li><a href=?menu=product&category=43>V-Gen</a></li>
-											<li><a href=?menu=product&category=44>Trancend</a></li>
-											<li><a href=?menu=product&category=45>Kingston</a></li>
-										</ul>
-									</li>
-									<li><a href=#/page/3>Cable</a>
-										<ul>
-											<li><a href=?menu=product&category=34>USB</a></li>
-											<li><a href=?menu=product&category=35>HDMI</a></li>
-											<li><a href=?menu=product&category=36>Audio</a></li>
-											<li><a href=?menu=product&category=16>Cable Network</a></li>
-											<li><a href=?menu=product&category=18>Cable Tester</a></li>
-										</ul>
-									</li>
-									<li><a href=?menu=product&category=37>Battery</a></li>
-									<li><a href=?menu=product&category=38>Cooling Pad</a></li>
-									<li><a href=?menu=product&category=46>Game Pad</a></li>
-									<li><a href=?menu=product&category=39>Webcam</a></li>
-								</ul>
-							</li>
-							<li><a href=?menu=etransaksi><span></span>Shopping Cart</a></li>
-							<li><a href=?menu=checkout class=selected><span></span>Checkout</a></li>
-							<li><a href=?menu=about><span></span>About Us</a></li>
-							<li><a href=?menu=guestbook><span></span>Guest Book</a></li>
+							<li><a href=?menu=carabeli><span></span>Cara Pembelian</a></li>
 							<li><a href=?menu=registrasi><span></span>Login</a></li>
 					</ul>";
 		}else if ($_GET['menu']=='about'){
@@ -326,13 +245,12 @@ ddsmoothmenu.init({
 									<li><a href=?menu=product&category=39>Webcam</a></li>
 								</ul>
 							</li>
-							<li><a href=?menu=etransaksi><span></span>Shopping Cart</a></li>
-							<li><a href=?menu=checkout><span></span>Checkout</a></li>
+							<li><a href=?menu=contact><span></span>Contact</a></li>
 							<li><a href=?menu=about class=selected><span></span>About Us</a></li>
-							<li><a href=?menu=guestbook><span></span>Guest Book</a></li>
+							<li><a href=?menu=carabeli><span></span>Cara Pembelian</a></li>
 							<li><a href=?menu=registrasi><span></span>Login</a></li>
 					</ul>";
-		}else if ($_GET['menu']=='guestbook'){
+		}else if ($_GET['menu']=='carapembelian'){
 		echo "<ul>
 						<li><a href=?menu=home><span></span>Home</a></li>
 							<li><a href=#>Products</a>
@@ -406,10 +324,9 @@ ddsmoothmenu.init({
 									<li><a href=?menu=product&category=39>Webcam</a></li>
 								</ul>
 							</li>
-							<li><a href=?menu=etransaksi><span></span>Shopping Cart</a></li>
-							<li><a href=?menu=checkout><span></span>Checkout</a></li>
+							<li><a href=?menu=contact><span></span>Contact</a></li>
 							<li><a href=?menu=about><span></span>About Us</a></li>
-							<li><a href=?menu=guestbook class=selected><span></span>Guest Book</a></li>
+							<li><a href=?menu=carabeli class=selected><span></span>Cara Pembelian</a></li>
 							<li><a href=?menu=registrasi><span></span>Login</a></li>
 					</ul>";
 		}else if ($_GET['menu']=='registrasi'){
@@ -486,10 +403,9 @@ ddsmoothmenu.init({
 									<li><a href=?menu=product&category=39>Webcam</a></li>
 								</ul>
 							</li>
-							<li><a href=?menu=etransaksi><span></span>Shopping Cart</a></li>
-							<li><a href=?menu=checkout><span></span>Checkout</a></li>
+							<li><a href=?menu=contact><span></span>Contact</a></li>
 							<li><a href=?menu=about><span></span>About Us</a></li>
-							<li><a href=?menu=guestbook><span></span>Guest Book</a></li>
+							<li><a href=?menu=carabeli><span></span>Cara Pembelian</a></li>
 							<li><a href=?menu=registrasi class=selected><span></span>Login</a></li>
 					</ul>";
 		}else{
@@ -566,10 +482,9 @@ ddsmoothmenu.init({
 									<li><a href=?menu=product&category=39>Webcam</a></li>
 								</ul>
 							</li>
-							<li><a href=?menu=etransaksi><span></span>Shopping Cart</a></li>
-							<li><a href=?menu=checkout><span></span>Checkout</a></li>
+							<li><a href=?menu=contact><span></span>Contact</a></li>
 							<li><a href=?menu=about><span></span>About Us</a></li>
-							<li><a href=?menu=guestbook><span></span>Guest Book</a></li>
+							<li><a href=?menu=carabeli><span></span>Cara Pembelian</a></li>
 							<li><a href=?menu=registrasi><span></span>Login</a></li>
 					</ul>";
 		}
@@ -578,14 +493,33 @@ ddsmoothmenu.init({
         </div> <!-- end of ddsmoothmenu -->
         <div id="menu_second_bar">
         	<div id="top_shopping_cart">
-            	Shopping Cart: <a href="?menu=etransaksi"><strong>Show Cart</strong></a>
-				&nbsp;
-        || Selamat Datang : <strong> FANDY</strong></a>
+            	Shopping Cart: <strong>3 Products</strong> ( <a href="#">Show Cart</a> )
             </div>
         	<div id="templatemo_search">
                 <form action="#" method="get">
+					<table>
+					<?php
+						
+						$search = $_POST['search'];
+						$query = mysql_query("SELECT * FROM new_product WHERE nama_page LIKE '%$search%'");
+						
+						while ($data = mysql_fetch_array($query)){
+							$nama = $data['nama_page'];
+							$isi= $data['isi'];
+							$harga = $data['price'];
+							$gambar = $data['gambar'];
+					?>
+						<a href="#"><img src="images/new_product/<?php echo $row['gambar']; ?>" alt="Image 01" /></a>
+						<h3><?php echo $row['nama_page']; ?></h3>
+						<p class="product_price">Rp.<?php echo $row['price'];?></p>
+						<a href="?menu=shoppingcart" class="add_to_card"><img src="images/cart.png" title="Shopping Cart"></a>
+						<a href="?menu=productdetail" class="detail"><img src="images/product.png" title="Detail"></a>
+					
+					<?php } ?>
+					
                   <input type="text" value="Search" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-                  <input type="submit" name="Search" value=" Search " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+                  <input type="submit" name="search" value=" Search " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+				  </table>
                 </form>
             </div>
             <div class="cleaner"></div>
@@ -714,7 +648,7 @@ ddsmoothmenu.init({
     	<p>
 			<a href="index.php">Home</a> | <a href="?menu=contact">Contact</a> | <a href="?menu=about">About Us</a> | <a href="?menu=">Cara Pembelian</a> | <a href="?menu=registrasi">Login</a>
 		</p>
-    	Copyright Â© 2013 <a href="#">Prokhus UIN Sunan Kalijaga Yogyakarta</a> | Designed by <a href="#" target="_parent">Fandy Saputra</a>
+    	Copyright © 2013 <a href="#">Prokhus UIN Sunan Kalijaga Yogyakarta</a> | Designed by <a href="#" target="_parent">Fandy Saputra</a>
     </div> <!-- END of templatemo_footer -->
     
 </div> <!-- END of templatemo_wrapper -->

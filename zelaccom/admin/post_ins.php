@@ -14,6 +14,7 @@ include "../connect.php";
 		$nama=$_POST['nama_page'];
 		$isi=$_POST['isi'];
 		$harga=$_POST['price'];
+		$stok = $_POST['stok'];
 		$gambar=$_POST['gambar'];
 		
 		$lokasi_file=$_FILES['gambar']['tmp_name'];
@@ -21,7 +22,7 @@ include "../connect.php";
 		$ukuran_file=$_FILES['gambar']['size'];
 		$direktori="../images/new_product/$nama_file";
 		
-		mysql_query("INSERT INTO new_product (nama_page, isi, price ,gambar) VALUES ('$nama', '$isi', $harga ,'$nama_file')");
+		mysql_query("INSERT INTO new_product (nama_page, isi, price , stok, gambar) VALUES ('$nama', '$isi', $harga, $stok, '$nama_file')");
 		
 		if (move_uploaded_file($lokasi_file,"$direktori")){
 			echo "";
@@ -52,6 +53,10 @@ include "../connect.php";
 							<tr>
 								<td height="47" align="center" valign="top" bgcolor="#ebecee">Harga</th>
 								<td height="47" align="center" valign="top" bgcolor="#ebecee"><input type="text" name="price" size="25" /></td>
+							</tr>
+							<tr>
+								<td height="47" align="center" valign="top" bgcolor="#ebecee">Stok</th>
+								<td height="47" align="center" valign="top" bgcolor="#ebecee"><input type="text" name="stok" size="25" /></td>
 							</tr>
 							<tr>
 								<td height="47" align="center" valign="top" bgcolor="#ebecee">Gambar</td>

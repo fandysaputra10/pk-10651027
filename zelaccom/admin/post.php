@@ -11,18 +11,19 @@
 				<tbody>
 					<div align="center">
 						<tr>
-						  <th width="254" bgcolor="#EDC718" align="center" scope="col">Nama Produk</th>
-						  <th width="254" bgcolor="#EDC718" align="center" scope="col">Detail</th>
-						  <th width="254" bgcolor="#EDC718" align="center" scope="col">Harga</th>
-						  <th width="254" bgcolor="#EDC718" align="center" scope="col">Gambar</th>
-						  <th width="254" bgcolor="#EDC718" align="center" scope="col" colspan="2">ACTION</th>
+						  <th width="150" bgcolor="#EDC718" align="center" scope="col">Nama Produk</th>
+						  <th width="350" bgcolor="#EDC718" align="center" scope="col">Detail</th>
+						  <th width="100" bgcolor="#EDC718" align="center" scope="col">Harga</th>
+						  <th width="50" bgcolor="#EDC718" align="center" scope="col">Stok</th>
+						  <th width="150" bgcolor="#EDC718" align="center" scope="col">Gambar</th>
+						  <th width="100" bgcolor="#EDC718" align="center" scope="col" colspan="2">ACTION</th>
 						</tr>
 
 					<?php
 						include "../connect.php";
 						include "../class.php";
 						$p      = new Paging6;
-						$batas  = 10;
+						$batas  = 3;
 						$posisi = $p->cariPosisi($batas);
 						
 						$query=mysql_query("SELECT * FROM new_product ORDER BY id DESC LIMIT $posisi, $batas");
@@ -32,6 +33,7 @@
 							  <td><a href=?menu=post_detail&nama_page=$data[nama_page]>$data[nama_page]</a></td>
 							  <td>$data[isi]</td>
 							  <td>Rp.$data[price]</td>
+							  <td>$data[stok]</td>
 							  <td>$data[gambar]</td>
 							  <td><a href='?menu=post_upd&id=$data[id]'><img src=\"images/update.png\" ></a></td>
 							  <td><a href='?menu=post&delete=$data[id]'><img src=\"images/delete.png\" ></a></td>

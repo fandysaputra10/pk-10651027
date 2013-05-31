@@ -14,6 +14,9 @@ switch($_GET['menu']){
 	case d_product_upd : include "d_product_upd.php"; break;
 	case category : include "category.php"; break;
 	case category_ins : include "category_ins.php"; break;
-	case contact : include "contact.php";break;
+	case d_guestbook : include "d_guestbook.php";break;
+	case d_about : include "d_about.php"; break;
+	case d_about_upd : include "d_about_upd.php"; break;
+	case registrasi : include "registrasi.php"; break;
 }
 ?>

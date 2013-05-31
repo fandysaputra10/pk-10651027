@@ -393,25 +393,15 @@ sidebar partners
 	font-weight: 700
 }
 
-.product_box .add_to_card {
-	float: left;
-	display: block;
-	width: 136px;
-	height: 28px;
-	line-height: 28px;	
-	text-align: center;
-	color: #fff;
-	background: url(../images/add_to_cart.jpg)
-}
-
 .product_box .detail {
 	float: left;
 	display: block;
-	width: 80px;
-	height: 28px;
-	line-height: 28px;
-	text-align: center;	
-	background: url(../images/detail.jpg)
+	width: 215px;
+	height: 35px;
+	line-height: 28px;	
+	text-align: center;
+	color: #fff;
+	background: url(../images/detailprod.png)
 }
 
 .checkout input { 

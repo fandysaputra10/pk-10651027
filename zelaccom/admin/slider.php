@@ -144,14 +144,19 @@
 							<td width="254" bgcolor="#EDC718" align="center">Isi</td>
 							<td width="254" bgcolor="#EDC718" align="center" colspan="2">Action</td></tr>
 					<?php
-						$sql=mysql_query("SELECT * FROM slider ORDER BY id DESC");
+
+							$p      = new Paging6;
+							$batas  = 3;
+							$posisi = $p->cariPosisi($batas);
+							
+						$sql=mysql_query("SELECT * FROM slider ORDER BY id DESC LIMIT $posisi, $batas");
 						while($data=mysql_fetch_array($sql)){
 						
 							$id = $data['id'];
 							$nama = $data['nama'];
 							$gambar = $data['gambar'];
 							$isi = $data['isi'];
-						
+							
 						?><tr align="center">
 								<td><?php echo "$nama";?></td>
 								<td><?php echo "$gambar";?></td>
@@ -161,8 +166,14 @@
 							</tr>
 						<?php
 					}
-				?>	
+				?>
 					</table>
+					<?php
+						$jmldata = mysql_num_rows(mysql_query("SELECT* FROM slider ORDER BY id DESC"));
+						$jmlhalaman  = $p->jumlahHalaman($jmldata, $batas);
+						$linkHalaman = $p->navHalaman($_GET[hal], $jmlhalaman);
+						echo "<hr /><p align=\"center\">$linkHalaman</p>";
+				?>
 				</form>
 					<?php
 						if($_GET['delete']){

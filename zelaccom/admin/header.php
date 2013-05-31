@@ -8,7 +8,7 @@ include "../connect.php";
 	<title>Halaman Administrator</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
-	<meta name="author" content="Muhammad Usman">
+	<meta name="author" content="Fandy Saputra">
 
 	<!-- The styles -->
 	<link id="bs-css" href="css/bootstrap-cerulean.css" rel="stylesheet">
@@ -43,8 +43,7 @@ include "../connect.php";
 	<![endif]-->
 
 	<!-- The fav icon -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-		
+	<link rel="shortcut icon" href="img/favicon.ico">	
 </head>
 
 <body>
@@ -58,7 +57,7 @@ include "../connect.php";
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="?menu=home"> <span>ZELACCOM ADMINISTRATOR</span></a>
+				<a class="brand" href="index.php"> <span>ZELACCOM ADMINISTRATOR</span></a>
 
 				
 				<!-- user dropdown starts -->
@@ -94,39 +93,39 @@ include "../connect.php";
 						<li><img src="images/folder.png"><span class="hidden-tablet"> MANAGE WEB PAGE</span>
 							<ul class="nav nav-tabs nav-stacked main-menu">
 								<li>
-									<a href="?menu=post"><img src="images/set.png" /><span class="hidden-tablet">Posting</span></a>
+									<a href="?menu=post"><img src="images/set.png" /><span class="hidden-tablet"> Posting</span></a>
 								</li>
 								<li>
-									<a href="#"><img src="images/set.png" /><span class="hidden-tablet">Profil Zelaccom</span></a>
+									<a href="?menu=registrasi"><img src="images/set.png" /><span class="hidden-tablet"> Registrasi</span></a>
 								</li>
 								<li>
-									<a href="#"><img src="images/set.png" /><span class="hidden-tablet">Cara Pembelian</span></a>
+									<a href="?menu=d_guestbook"><img src="images/set.png" /><span class="hidden-tablet"> Guest Book</span></a>
 								</li>
 								<li>
-									<a href="?menu=contact"><img src="images/set.png" /><span class="hidden-tablet">Pesan/Kontak</span></a>
+									<a href="?menu=d_about"><img src="images/set.png" /><span class="hidden-tablet"> About Zelaccom</span></a>
 								</li>
 								<li>
-									<a href="?menu=slider"><img src="images/set.png" /><span class="hidden-tablet">Slider</span></a>
+									<a href="?menu=slider"><img src="images/set.png" /><span class="hidden-tablet"> Slider</span></a>
 								</li>
 							</ul>
 						</li>
 						<li><img src="images/folder.png"><span class="hidden-tablet"> MANAGE PRODUCT</span>
 							<ul class="nav nav-tabs nav-stacked main-menu">
 								<li>
-								<a href="?menu=d_product"><img src="images/set.png" /><span class="hidden-tablet">Product</span></a>
+								<a href="?menu=d_product"><img src="images/set.png" /><span class="hidden-tablet"> Product</span></a>
 								</li>
 								<li>
-								<a href="?menu=category"><img src="images/set.png" /><span class="hidden-tablet">Category</span></a>
+								<a href="?menu=category"><img src="images/set.png" /><span class="hidden-tablet"> Category</span></a>
 								</li>
 							</ul>
 						</li>
 						<li><img src="images/folder.png"><span class="hidden-tablet"> MANAGE BOOKING </span>
 							<ul class="nav nav-tabs nav-stacked main-menu">
 								<li>
-									<a href="#"><img src="images/set.png" /><span class="hidden-tablet">Pemesanan</span></a>
+									<a href="#"><img src="images/set.png" /><span class="hidden-tablet"> Shooping Cart</span></a>
 								</li>
 								<li>
-									<a href="#"><img src="images/set.png" /><span class="hidden-tablet">Penjualan</span></a>
+									<a href="#"><img src="images/set.png" /><span class="hidden-tablet"> Check Out</span></a>
 								</li>
 							</ul>
 						</li>

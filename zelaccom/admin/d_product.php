@@ -33,7 +33,7 @@
 									
 									echo"<tr align=\"center\">
 									  <td><a href=?menu=product_detail&nama_product=$data[nama_product]>$data[nama_product]</a></td>
-									  <td><a href=?menu=category&id_category=$data[id_category]>$data[id_category]</td>
+									  <td><a href=?menu=category&id_category=$data[id_category]>$data[id_category]</a></td>
 									  <td>Rp.$data[price]</td>
 									  <td>$data[stok]</td>
 									  <td>$data[gambar]</td>
